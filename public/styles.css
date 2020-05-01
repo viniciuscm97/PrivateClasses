@@ -64,3 +64,83 @@ header{
     width: 100%;
     transition: width 250ms ease-in-out 50ms;
 }
+
+/* card */
+
+.card{
+    width: 800px;
+    min-height: 400px;
+    margin: 45px auto;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+
+    
+    animation-name: up;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+
+    /* animation: up 400ms ease-in-out; */
+    
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px) ;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.info {
+    padding: 32px;
+
+}
+.info .item{
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.info .item:last-child{
+    border-bottom: none;
+}
+.info h3,
+.info .item div:nth-child(1){
+    color: #2f71af;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+    
+}
+.info .item div:nth-child(2){
+    color: rgb(69, 69, 82);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.info .item div:nth-child(2) span{
+    padding: 8px 16px;
+    background-color: yellow;
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+
+
+}
