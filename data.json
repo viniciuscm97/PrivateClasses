@@ -1,0 +1,22 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "htps://google.com.br",
+      "name": "Vinicius",
+      "birthday": 883526400000,
+      "education": "3",
+      "typeClass": "P",
+      "atuacion": "matematica"
+    },
+    {
+      "id": 2,
+      "avatar_url": "htps://google.com.br",
+      "name": "Jorge",
+      "birthday": 1286668800000,
+      "education": "M",
+      "typeClass": "D",
+      "atuacion": "fisica,matematica"
+    }
+  ]
+}
