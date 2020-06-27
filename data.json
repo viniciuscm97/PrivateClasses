@@ -2,21 +2,33 @@
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "htps://google.com.br",
+      "avatar_url": "https://source.unsplash.com/collection/4409762/320x320",
       "name": "Vinicius",
+      "created_at": 1593297953973,
       "birthday": 883526400000,
-      "education": "3",
+      "education": "D",
       "typeClass": "P",
-      "atuacion": "matematica"
+      "atuacion": "Matematica, história"
     },
     {
       "id": 2,
-      "avatar_url": "htps://google.com.br",
+      "avatar_url": "https://source.unsplash.com/collection/4409762/320x320",
       "name": "Jorge",
       "birthday": 1286668800000,
-      "education": "M",
+      "created_at": 1593297953973,
+      "education": "ESC",
       "typeClass": "D",
-      "atuacion": "fisica,matematica"
+      "atuacion": "fisica, matematica"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/4409762/320x320",
+      "created_at": 1593297953973,
+      "name": "Camila",
+      "birthday": 566956800000,
+      "education": "ESC",
+      "typeClass": "D",
+      "atuacion": "TI, física, matemática"
     }
   ]
 }
