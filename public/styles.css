@@ -182,3 +182,18 @@ a.button {
     text-align: center;
     text-decoration: none;
 }
+
+.grid-buttons{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.grid-buttons a.button, .grid-buttons button[type="submit"]{
+    width: 150px;
+}
+
+.grid-buttons button[type="submit"]{
+    background-color: lightcoral;
+}

@@ -11,23 +11,13 @@
       "atuacion": "Matematica, história"
     },
     {
-      "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/4409762/320x320",
-      "name": "Jorge",
-      "birthday": 1286668800000,
-      "created_at": 1593297953973,
-      "education": "ESC",
-      "typeClass": "D",
-      "atuacion": "fisica, matematica"
-    },
-    {
-      "id": 3,
+      "id": "3",
       "avatar_url": "https://source.unsplash.com/collection/4409762/320x320",
       "created_at": 1593297953973,
-      "name": "Camila",
-      "birthday": 566956800000,
-      "education": "ESC",
-      "typeClass": "D",
+      "name": "Kamila",
+      "birthday": 346118400000,
+      "education": "EMC",
+      "typeClass": "P",
       "atuacion": "TI, física, matemática"
     }
   ]

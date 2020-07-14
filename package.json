@@ -7,10 +7,11 @@
     "start": "nodemon server.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"    
+    "nodemon": "^2.0.3"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "method-override": "^3.0.0",
     "nunjucks": "^3.2.1"
   }
 }

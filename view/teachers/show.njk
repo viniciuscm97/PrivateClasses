@@ -40,7 +40,8 @@
 
             <div>
                 {% for atuacion in teacher.atuacion %}
-                {{atuacion}}
+
+                <span>{{atuacion}}</span>
                 {% endfor %}
             </div>
         </div>
@@ -52,10 +53,16 @@
             </div>
         </div>
 
-        <a href="instructor/edit" class="button">Editar</a>
+        <div class="grid-buttons">
+        <a href="/teachers/{{teacher.id}}/edit" class="button">Editar</a>
         
 
-    
+        <form action="/teachers?_method=DELETE" method="POST">
+            <button type="submit">Deletar</button>
+            </div>
+            <input type="hidden" name="id" value="{{teacher.id}}">
+        </form>
+        
     </section>
 </div>
 {% endblock content %}
