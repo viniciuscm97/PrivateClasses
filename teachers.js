@@ -104,7 +104,8 @@ exports.put = function(req,res) {
     const teacher = {
         ... foundTeacher,
         ...req.body,
-        birthday: Date.parse(req.body.birthday)
+        birthday: Date.parse(req.body.birthday),
+        id: Number(req.body.id)
 
     }
 
@@ -131,4 +132,23 @@ exports.delete = function(req,res){
 
         return res.redirect(`/teachers`)
     })
+}
+
+// index
+
+exports.index = function(req,res){
+    var DataTeachers=[];
+
+
+    for (let i = 0; i < data.teachers.length; i++) {
+        const teacher= {
+            ...data.teachers[i],
+            atuacion: data.teachers[i].atuacion.split(",")
+        }
+        DataTeachers.push(teacher)
+
+    }
+
+    return res.render("teachers/index", {teachers:DataTeachers})
+
 }

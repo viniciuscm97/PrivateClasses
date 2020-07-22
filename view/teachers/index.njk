@@ -1,46 +1,33 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<div class="card">
-    <section class="avatar"
-     style= "background: url(https://source.unsplash.com/collection/4409762/320x320) no-repeat center center/ cover"> </section>
+<div class="card table-container">
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Nome completo</th>
+                <th>Acompanhamento</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
 
-    <section class="info">
-        <h3>Detalhes</h3>
+        <tbody>
+            {% for teacher in teachers %}
+                <tr>
+                    <td>
+                        <span style="background-image: url({{teacher.avatar_url}})"></span>
+                        {{teacher.name}}</td>
+                    <td>
+                        {% for atuacion in teacher.atuacion %}
+                            <span> {{atuacion}}</span>
+                        {% endfor %}
+                           </td>
 
-        <div class="item">
-            <div>Nome</div>
-            <div>Roberto da Silva</div>
-        </div>
+                    <td><a href="teachers/{{teacher.id}}">ver</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
         
-        <div class="item">
-            <div>Idade</div>
-            <div>25 anos</div>
-        </div>
-        
-        <div class="item">
-            <div>Grau de escolaridade</div>
-            <div>Doutorado</div>
-        </div>
-        
-        <div class="item">
-            <div>Tipo de aula</div>
-            <div>Presencial</div>
-        </div>
-        
-        <div class="item">
-            <div>Acompanhamento</div>
-            <div>
-                <span>Física</span>
-                <span>Matemática</span>
-            </div>
-        </div>
-        
-        <div class="item">
-            <div>Desde</div>
-            <div>21/10/2018</div>
-        </div>
-        
-    </section>
+    </table>
 </div>
 {% endblock content %}
